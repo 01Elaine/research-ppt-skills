@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "version": "0.1.0-rc7-public",
+  "reference_kind": "sanitized complete editable research presentation template",
+  "visual_resources": [
+    "../assets/layout-cover.png",
+    "../assets/layout-authors.png",
+    "../assets/layout-outline.png",
+    "../assets/layout-01.png",
+    "../assets/layout-04.png",
+    "../assets/layout-05.png",
+    "../assets/layout-06.png"
+  ],
+  "includes_original_paper_assets": false,
+  "includes_personal_source_files": false,
+  "requires_external_skill": false,
+  "editable_template": {
+    "path": "../assets/soc-reference.pptx",
+    "sha256": "1c20ecc13715ed6b42bc999b7dfe2555069c1e8bbdce1522ac99e265b1e6e406",
+    "slides": 16,
+    "notes": 16
+  },
+  "generic_talk": "../examples/template-talk.md",
+  "license_status": "proposed MIT; publisher rights and adoption pending"
+}

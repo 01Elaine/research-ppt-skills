@@ -1,0 +1,7 @@
+interface:
+  display_name: "SOC 研究汇报 PPT"
+  short_description: "复用白底蓝灰可编辑版式，以整篇连贯与讲懂为首组织口播，保留事实、图表和用户手改"
+  icon_large: "./assets/preview.png"
+  default_prompt: "使用 $artifact-template-soc-ppt，按研究、受众和时长选取布局，以整篇连贯与讲懂为首安排口播，允许清楚定位的讲序调整，保护事实、原图和手改，按授权分工交付。"
+policy:
+  allow_implicit_invocation: true

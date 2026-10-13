@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "example_only": true,
+  "case": "SOC teaching example; does not replace the user's latest working MD or PPT",
+  "audience": ["students including beginners", "reviewers familiar with the research area"],
+  "total_ceiling_minutes": 18,
+  "suggested_planned_minutes": 16,
+  "suggested_buffer_minutes": 2,
+  "local_targets": [{"page": 2, "ceiling_seconds": 40}],
+  "timing_status": "text estimate only; not rehearsed or accepted against the ceiling",
+  "skill_defaults": false,
+  "role_configuration_example": {
+    "content_reviewer": "reviews content and evidence",
+    "presentation_writer": "sole writer of PPT and PDF",
+    "skill_writer": "maintains the skill candidate",
+    "mentor": "dispatches and reviews; does not edit PPT when assigned this role",
+    "fixed_session_count_required": false
+  }
+}

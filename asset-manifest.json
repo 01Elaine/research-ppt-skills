@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "version": "0.1.0-rc7-public",
+  "includes_original_paper_assets": false,
+  "includes_personal_source_files": false,
+  "font_files_distributed": false,
+  "assets": [
+    {
+      "path": "skills/artifact-template-soc-ppt/assets/preview.png",
+      "sha256": "6a766bf48ed3954a568616471d502b260d9326133fce5d48c5fa707e489e5d4d",
+      "bytes": 57303,
+      "origin": "rendered from sanitized complete template",
+      "license_status": "proposed MIT; publisher rights and adoption pending"
+    },
+    {
+      "path": "skills/artifact-template-soc-ppt/assets/reference.pptx",
+      "sha256": "1c20ecc13715ed6b42bc999b7dfe2555069c1e8bbdce1522ac99e265b1e6e406",
+      "bytes": 92426,
+      "origin": "sanitized complete editable template",
+      "license_status": "proposed MIT; publisher rights and adoption pending"
+    },
+    {
+      "path": "skills/research-ppt-style/assets/layout-01.png",
+      "sha256": "9de751a6549da53b70c7fcd83f8d638a93686ee22e20aeeeea76d4925829eeea",
+      "bytes": 106266,
+      "origin": "rendered from sanitized complete template",
+      "license_status": "proposed MIT; publisher rights and adoption pending"
+    },
+    {
+      "path": "skills/research-ppt-style/assets/layout-04.png",
+      "sha256": "30cbd2fae269527b32013c604e0dc00c0979b2904f730610c09543f9ce2c8699",
+      "bytes": 99853,
+      "origin": "rendered from sanitized complete template",
+      "license_status": "proposed MIT; publisher rights and adoption pending"
+    },
+    {
+      "path": "skills/research-ppt-style/assets/layout-05.png",
+      "sha256": "b9ff85ba96973548ef5bd82e76d7e0a1f7d246b5ab8be37dc1aa746c67133786",
+      "bytes": 73726,
+      "origin": "rendered from sanitized complete template",
+      "license_status": "proposed MIT; publisher rights and adoption pending"
+    },
+    {
+      "path": "skills/research-ppt-style/assets/layout-06.png",
+      "sha256": "e0be1870a85e3ff20f3293b9e219f760a655092108ab84fff6d07e43c2076aa2",
+      "bytes": 62503,
+      "origin": "rendered from sanitized complete template",
+      "license_status": "proposed MIT; publisher rights and adoption pending"
+    },
+    {
+      "path": "skills/research-ppt-style/assets/layout-authors.png",
+      "sha256": "6747669e5432c983840d350b50aea8372cf5a151308c97bebe381067d764ffc1",
+      "bytes": 74941,
+      "origin": "rendered from sanitized complete template",
+      "license_status": "proposed MIT; publisher rights and adoption pending"
+    },
+    {
+      "path": "skills/research-ppt-style/assets/layout-cover.png",
+      "sha256": "6a766bf48ed3954a568616471d502b260d9326133fce5d48c5fa707e489e5d4d",
+      "bytes": 57303,
+      "origin": "rendered from sanitized complete template",
+      "license_status": "proposed MIT; publisher rights and adoption pending"
+    },
+    {
+      "path": "skills/research-ppt-style/assets/layout-outline.png",
+      "sha256": "49685c347215eb91d6127c237f198b6d269ce63a2bdbb02968f54b3492a9fd15",
+      "bytes": 57085,
+      "origin": "rendered from sanitized complete template",
+      "license_status": "proposed MIT; publisher rights and adoption pending"
+    },
+    {
+      "path": "skills/research-ppt-style/assets/soc-reference.pptx",
+      "sha256": "1c20ecc13715ed6b42bc999b7dfe2555069c1e8bbdce1522ac99e265b1e6e406",
+      "bytes": 92426,
+      "origin": "sanitized complete editable template",
+      "license_status": "proposed MIT; publisher rights and adoption pending"
+    }
+  ]
+}

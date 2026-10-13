@@ -1,0 +1,45 @@
+{
+  "method": "non-whitespace Unicode content characters in the 16 bodies; headings and Markdown emphasis delimiters excluded; not pronunciation units",
+  "example_only": true,
+  "spoken_characters": 4620,
+  "assumed_characters_per_minute": [
+    260,
+    320
+  ],
+  "text_only_minutes": [
+    14.44,
+    17.77
+  ],
+  "additional_pauses_and_figures_minutes": [
+    1.5,
+    3
+  ],
+  "additional_time_scope": "English and numeric pronunciation, figure pointing and pauses; rough allowance, not measured",
+  "estimated_total_minutes": [
+    15.94,
+    20.77
+  ],
+  "case_total_ceiling_minutes": 18,
+  "suggested_planned_minutes": 16,
+  "suggested_buffer_minutes": 2,
+  "text_estimate_within_ceiling": false,
+  "actual_timed_rehearsal": false,
+  "accepted_as_timed_final_talk": false,
+  "local_estimates": [
+    {
+      "page": 2,
+      "spoken_characters": 96,
+      "additional_pauses_seconds": [
+        3,
+        8
+      ],
+      "estimated_total_seconds": [
+        21.0,
+        30.15
+      ],
+      "case_ceiling_seconds": 40,
+      "text_estimate_within_ceiling": true,
+      "actual_timed_rehearsal": false
+    }
+  ]
+}

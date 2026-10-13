@@ -1,0 +1,6 @@
+interface:
+  display_name: "研究PPT风格与连续口播"
+  short_description: "以整篇连贯和讲懂为首组织研究PPT口播，保留事实、原图与手改，支持清楚定位的讲序调整"
+  default_prompt: "使用 $research-ppt-style，以整篇连贯和听众理解为第一目标，按最新材料、受众与时长组织口播，允许清楚定位的讲序调整，保留事实口径、原图和手改，按授权分工交付并连续审读。"
+policy:
+  allow_implicit_invocation: true
