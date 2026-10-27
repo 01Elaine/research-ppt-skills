@@ -1,5 +1,7 @@
-# 公开完整模板来源
+# 匿名参考来源
 
-本包保留用户提供的白底蓝灰版式和完整汇报路线，将个人身份、日期、原论文事实、图表、截图及原备注替换为通用占位。16页及16份通用备注可编辑，包含封面、作者页、目录和后续内容；这不是个人原稿或新论文成稿。
+参考为16页SOC研究汇报及其逐页原备注的匿名副本，保留完整封面、作者与团队、目录、研究图表、可编辑表格及方法论借鉴。仅清理汇报者姓名、单位/学院、报告日期、文档编辑信息；论文作者及研究机构保留为来源。
 
-资源与哈希见 [reference-source.json](reference-source.json)，通用口播见 [template-talk.md](../examples/template-talk.md)。本skill可独立安装，不依赖制作者的本机路径。新论文内容、作者资料与图表需要按来源重新核对。
+论文为Yang等，USENIX Security 2024，True Attacks, Attack Attempts, or Benign Triggers? An Empirical Measurement of Network Alerts in a Security Operations Center。论文图表与作者页公开网页截图随匿名参考保留，权利仍归相应权利人，不纳入候选MIT许可。未附论文PDF或字体文件。
+
+版本与资源哈希见 [reference-source.json](reference-source.json)。本技能另带16页空白占位模板及通用口播，避免新任务误用SOC研究数字。参考文件只读，使用时复制到新任务目录。

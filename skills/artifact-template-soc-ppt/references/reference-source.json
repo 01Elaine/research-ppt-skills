@@ -1,19 +1,23 @@
 {
   "schema_version": 1,
-  "version": "0.1.0-rc7-public",
-  "reference_kind": "sanitized complete editable research presentation template",
+  "version": "0.1.0-rc8-sanitized",
+  "reference_kind": "anonymized complete SOC presentation and original notes",
+  "includes_original_paper_assets": true,
+  "includes_personal_identifiers": false,
+  "requires_external_skill": false,
   "visual_resources": [
     "../assets/preview.png"
   ],
-  "includes_original_paper_assets": false,
-  "includes_personal_source_files": false,
-  "requires_external_skill": false,
   "editable_template": {
     "path": "../assets/reference.pptx",
-    "sha256": "1c20ecc13715ed6b42bc999b7dfe2555069c1e8bbdce1522ac99e265b1e6e406",
+    "sha256": "6cfa33c8c839c1958b2f28d0d10b26353040941b4a834f1bca45a94378d34b8b",
     "slides": 16,
     "notes": 16
   },
+  "anonymized_original_notes": "../examples/reference-talk.md",
+  "generic_template": "../assets/blank-template.pptx",
   "generic_talk": "../examples/template-talk.md",
-  "license_status": "proposed MIT; publisher rights and adoption pending"
+  "font_files_distributed": false,
+  "third_party_assets": "Academic figures and website screenshots retain their original rights; no blanket relicensing.",
+  "license_status": "proposed MIT for original rules and generic assets; adoption pending; third-party material excluded"
 }

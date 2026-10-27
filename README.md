@@ -1,29 +1,44 @@
-# 研究PPT技能：完整结构公开版
+# 研究PPT技能：完整匿名参考版
 
-版本0.1.0-rc7-public（2026-10-14）。本包提供完整16页可编辑公开模板：封面、作者页、目录、研究问题、总体方法、证据、启示、局限、方法论借鉴和结语。保留白底蓝灰风格与叙事规范，个人身份和原论文内容使用明确占位。
+版本0.1.0-rc8-sanitized（2026-10-27）。两项技能包含最新正文/口播偏好、指图讲述、手改保护与公式检查规则。新增16页SOC完整匿名参考及其逐页原备注，保留研究图表和学术来源；汇报者姓名、单位/学院、报告日期与编辑元数据已清理。原RC7的16页空白模板与通用口播另存保留。
 
 ## 安装与使用
 
-| 技能 | 入口与资源 |
+| 技能 | 内容 |
 | --- | --- |
-| 通用风格与连续口播 | [research-ppt-style](skills/research-ppt-style/SKILL.md)，自带完整模板与通用口播 |
-| 可选模板技能 | [artifact-template-soc-ppt](skills/artifact-template-soc-ppt/SKILL.md)，可独立安装 |
+| [research-ppt-style](skills/research-ppt-style/SKILL.md) | 风格、自然口播、图表/手改保护、公式检查；完整匿名参考及原备注 |
+| [artifact-template-soc-ppt](skills/artifact-template-soc-ppt/SKILL.md) | 独立可用的匿名参考母版、空白模板与口播 |
 
-把所需skill文件夹整体复制到当前客户端的技能目录，保留assets、references、examples和agents；不只复制SKILL.md。已有同名skill先备份，再按使用者要求更新。Codex通常使用个人目录下的.codex/skills，实际位置也可由CODEX_HOME配置。云端工具需要接收文件附件，不能凭本机路径读取资源。
+在接收者自己的Codex中发送：
 
-模板入口：[reference.pptx](skills/artifact-template-soc-ppt/assets/reference.pptx)。匹配16页模板的通用口播：[template-talk.md](skills/research-ppt-style/examples/template-talk.md)。另有 [SOC教学口播](skills/research-ppt-style/examples/soc-talk.md)，它是公开论文的独立转述，不是个人原稿，也不与占位页面的示意数字混为研究事实。
+```text
+请使用 $skill-installer，从GitHub仓库01Elaine/research-ppt-skills安装：
+skills/research-ppt-style
+skills/artifact-template-soc-ppt
+请保留各自完整资源目录；已有同名技能时先说明，不直接覆盖。
+```
+
+或下载仓库ZIP，将两个完整技能目录放入当前客户端识别的用户技能目录；不要只复制SKILL.md，实际安装目录按客户端配置确定。安装后若未识别，重新打开会话或重启客户端。不能把一台机器的安装路径直接用于另一台或云端。
 
 调用示例：
-> 使用 $research-ppt-style，阅读我提供的论文，参考完整公开模板制作研究汇报。按本次听众和时长组织问题、总体方法与证据，替换占位内容，输出可编辑PPT与对应口播。完整参考不要求固定16页。
 
-> 使用 $artifact-template-soc-ppt，先检查完整模板，从封面、作者页、目录和研究内容版式中选择需要的页。补齐真实来源、图表、数据与身份信息，再连续通读口播并渲染检查。
+```text
+请同时使用 $research-ppt-style 和 $artifact-template-soc-ppt，参考SOC母版制作本次研究汇报。内容以我提供的论文为准，替换示例中的研究数字和身份字段，输出可编辑PPT和对应口播稿。
+```
 
-## 上传范围
+## 参考与口播的版本
 
-只将本目录作为Git仓库内容，或使用由它生成的RC7-public ZIP；不要上传父目录。此包不含个人原PPT、个人口播、原论文图表、网页截图、原件预览、私人路径、编辑者属性或旧Git历史。所有预览来自当前公开占位模板。
+- [完整匿名PPT](skills/artifact-template-soc-ppt/assets/reference.pptx)：16页，保留研究图表和原备注，用于理解实际版式及图文关系。
+- [逐页原备注](skills/artifact-template-soc-ppt/examples/reference-talk.md)：从本次公开的匿名PPT提取，正文与PPT备注一一对应；不是后续19页工作稿。
+- [16页空白模板](skills/artifact-template-soc-ppt/assets/blank-template.pptx)及[通用口播](skills/artifact-template-soc-ppt/examples/template-talk.md)：供新论文替换内容，不含原论文图表。
+- [SOC教学转述](skills/research-ppt-style/examples/soc-talk.md)：另一个连续讲述示例，与原备注版本不同，不宣称旧参考稿已经落实后来新增的每条表达偏好。
 
-文件内容清理与许可选择是分别记录的事项。自写规则、文档、脚本及占位版式的许可方案见 [LICENSE.md](LICENSE.md)，来源与素材范围见 [THIRD_PARTY.md](THIRD_PARTY.md)。本仓库分发完整结构公开模板，许可证仍保留候选方案，不将待确认的许可写成已经生效。
+两项技能均可独立安装。技能不内置PPT编辑引擎；制作、渲染与字体由接收者环境提供。不要将整页预览贴成最终PPT，原图可以保留为研究图片，文字、表格与版式继续可编辑。
 
-可选检查：Python 3.10+标准库运行 `python tools/check_package.py .`。两项skill不依赖另一项或制作者本机路径；PPT编辑与外观检查需要使用者自己的工具。模板画廊和客户端安装没有在接收者环境现场验证。字体未嵌入或分发。
+## 发布范围
 
-清理范围见 [docs/privacy.md](docs/privacy.md)，验证范围见 [docs/validation.md](docs/validation.md)。
+只以本仓库目录发布，不上传父目录中的私人原件、审查资料或构建缓存。公开版含经身份清理的参考副本及原备注，不含用户本机原件、个人身份、私人路径、原论文PDF或字体。论文作者与机构名称是学术归属，不是汇报者的身份信息。
+
+[LICENSE.md](LICENSE.md)仍为许可候选说明，未擅自设为生效MIT许可；匿名参考所含论文图表与网页截图另见[THIRD_PARTY.md](THIRD_PARTY.md)，不纳入候选MIT授权范围。隐私处理见[docs/privacy.md](docs/privacy.md)，验证边界见[docs/validation.md](docs/validation.md)。
+
+Python 3.10+可运行 `python tools/check_package.py .` 做文件结构、资源路径、PPT关系及资产哈希检查。该检查不代替研究事实、视觉、素材授权或接收者环境验收。

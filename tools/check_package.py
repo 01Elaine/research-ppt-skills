@@ -101,8 +101,17 @@ def check_ppt(file):
         tables = sum(len(ET.fromstring(z.read(n)).findall('.//a:tbl', NS)) for n in slides)
         if len(slides) != 16 or len(notes) != 16 or tables != 1:
             fail(f'{file.name}: expected sixteen complete template pages, sixteen notes and one native table')
-        if any(n.startswith(('ppt/media/', 'ppt/fonts/', 'ppt/embeddings/')) for n in names):
-            fail(f'{file.name}: unexpected image, font or embedded binary')
+        media = [n for n in names if n.startswith('ppt/media/') and not n.endswith('/')]
+        if file.name == 'blank-template.pptx':
+            if media:
+                fail(f'{file.name}: blank template must not contain research images')
+        elif file.name in {'reference.pptx', 'soc-reference.pptx'}:
+            if len(media) != 8 or any(not n.endswith('.png') for n in media):
+                fail(f'{file.name}: expected eight documented research PNGs')
+        else:
+            fail(f'{file.name}: unrecognized presentation role')
+        if any(n.startswith(('ppt/fonts/', 'ppt/embeddings/', 'ppt/comments/', 'customXml/')) for n in names):
+            fail(f'{file.name}: unexpected font, attachment, comment or custom XML')
         if 'docProps/custom.xml' in names:
             fail(f'{file.name}: custom document properties retained')
         if 'docProps/core.xml' in names:
@@ -111,6 +120,32 @@ def check_ppt(file):
                 node = core.find(tag, NS)
                 if node is not None and (node.text or '').strip():
                     fail(f'{file.name}: personal editor metadata retained')
+        for name in names:
+            if name.endswith(('.xml', '.rels')):
+                text = z.read(name).decode('utf-8')
+                if re.search(r'(?i)\b[a-z]:[\\/]', text) or re.search(r'/(?:Users|home)/[^/\s]+/', text):
+                    fail(f'{file.name}: private absolute path in {name}')
+        # Validate the full reference script against actual note text, not a generic talk.
+        if file.name in {'reference.pptx', 'soc-reference.pptx'}:
+            talk = file.parent.parent / 'examples/reference-talk.md'
+            if not talk.is_file():
+                fail(f'{file.name}: missing paired original notes')
+            else:
+                sections = re.split(r'^## P(\d+)\s*$', talk.read_text(encoding='utf-8'), flags=re.M)
+                actual = {int(sections[i]): sections[i+1].strip() for i in range(1, len(sections), 2)}
+                if set(actual) != set(range(1, 17)):
+                    fail(f'{file.name}: paired script must contain pages 1 through 16')
+                for i in range(1, 17):
+                    note = ET.fromstring(z.read(f'ppt/notesSlides/notesSlide{i}.xml'))
+                    paragraphs = []
+                    for shape in note.findall('.//{http://schemas.openxmlformats.org/presentationml/2006/main}sp'):
+                        ph = shape.find('.//{http://schemas.openxmlformats.org/presentationml/2006/main}ph')
+                        if ph is not None and ph.get('type') == 'body':
+                            paragraphs.extend(''.join(t.text or '' for t in para.findall('.//a:t', NS))
+                                              for para in shape.findall('.//a:p', NS))
+                    expected = '\n\n'.join(p for p in paragraphs if p.strip()).strip()
+                    if actual.get(i) != expected:
+                        fail(f'{file.name}: script differs from actual notes on page {i}')
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('root', nargs='?', default='.')
