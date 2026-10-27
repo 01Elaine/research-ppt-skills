@@ -23,4 +23,8 @@ description: 使用用户确认的SOC研究汇报完整可编辑母版制作PPT�
 
 保留旧PPT/PDF、脚本、素材及旧output，交独立新可编辑文件和对应预览/所需PDF。改前建图表清单，改后核对身份、对象类型、数据和关系、锁定几何及实际渲染可见性。不得只查文件关系存在或源码；缺少渲染或原生显示检查时明确实际范围，不声称已通过。
 
-与参考逐页对应的原备注见 [reference-talk.md](examples/reference-talk.md)；新论文可从 [16页空白占位模板](assets/blank-template.pptx) 及 [通用口播](examples/template-talk.md) 开始。匿名参考含论文图表和公开网页截图，不将第三方素材并入候选MIT许可。使用者按自己的任务核对来源与使用范围。
+与参考逐页对应的原备注见 [reference-talk.md](examples/reference-talk.md)；新论文可从 [16页空白占位模板](assets/blank-template.pptx) 及 [通用口播](examples/template-talk.md) 开始。匿名参考含论文图表和公开网页截图，不将第三方素材并入MIT许可。使用者按自己的任务核对来源与使用范围。
+
+## 许可
+
+原创技能内容采用 [MIT](LICENSE)；完整参考及预览中的第三方素材按 [NOTICE.md](NOTICE.md) 单独保留权利。单独分发本技能时保留这两份声明。

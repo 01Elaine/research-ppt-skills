@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "0.1.0-rc8-sanitized",
+  "version": "0.1.0",
   "reference_kind": "anonymized complete SOC presentation and original notes",
   "includes_original_paper_assets": true,
   "includes_personal_identifiers": false,
@@ -22,5 +22,10 @@
   "generic_talk": "../examples/template-talk.md",
   "font_files_distributed": false,
   "third_party_assets": "Academic figures and website screenshots retain their original rights; no blanket relicensing.",
-  "license_status": "proposed MIT for original rules and generic assets; adoption pending; third-party material excluded"
+  "license_status": "MIT adopted for original material; third-party material excluded",
+  "license": "MIT AND LicenseRef-ThirdParty-Academic",
+  "license_scope": "original skill guidance, original narration, scripts and generic layout assets",
+  "license_file": "../LICENSE",
+  "third_party_notice": "../NOTICE.md",
+  "original_content_license": "MIT"
 }

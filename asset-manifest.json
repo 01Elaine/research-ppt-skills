@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "0.1.0-rc8-sanitized",
+  "version": "0.1.0",
   "includes_original_paper_assets": true,
   "includes_anonymized_reference_and_original_notes": true,
   "includes_personal_identifiers": false,
@@ -11,112 +11,138 @@
       "sha256": "1c20ecc13715ed6b42bc999b7dfe2555069c1e8bbdce1522ac99e265b1e6e406",
       "bytes": 92426,
       "origin": "retained RC7 generic template or its render",
-      "license_status": "proposed MIT; adoption pending"
+      "license_status": "MIT",
+      "license": "MIT"
     },
     {
       "path": "skills/artifact-template-soc-ppt/assets/preview.png",
       "sha256": "11fa1f8da5c2d09c1b3a65861415b06aeaa759e0339dc0011cffbf12d5eb23ca",
       "bytes": 88972,
       "origin": "anonymized complete SOC reference or freshly rendered preview",
-      "license_status": "reference includes third-party academic material; no blanket MIT relicensing"
+      "license_status": "MIT for original portions; third-party academic material excluded",
+      "license": "MIT AND LicenseRef-ThirdParty-Academic",
+      "third_party_notice": "THIRD_PARTY.md"
     },
     {
       "path": "skills/artifact-template-soc-ppt/assets/reference.pptx",
       "sha256": "6cfa33c8c839c1958b2f28d0d10b26353040941b4a834f1bca45a94378d34b8b",
       "bytes": 2382183,
       "origin": "anonymized complete SOC reference or freshly rendered preview",
-      "license_status": "reference includes third-party academic material; no blanket MIT relicensing"
+      "license_status": "MIT for original portions; third-party academic material excluded",
+      "license": "MIT AND LicenseRef-ThirdParty-Academic",
+      "third_party_notice": "THIRD_PARTY.md"
     },
     {
       "path": "skills/research-ppt-style/assets/blank-template.pptx",
       "sha256": "1c20ecc13715ed6b42bc999b7dfe2555069c1e8bbdce1522ac99e265b1e6e406",
       "bytes": 92426,
       "origin": "retained RC7 generic template or its render",
-      "license_status": "proposed MIT; adoption pending"
+      "license_status": "MIT",
+      "license": "MIT"
     },
     {
       "path": "skills/research-ppt-style/assets/layout-01.png",
       "sha256": "9de751a6549da53b70c7fcd83f8d638a93686ee22e20aeeeea76d4925829eeea",
       "bytes": 106266,
       "origin": "retained RC7 generic template or its render",
-      "license_status": "proposed MIT; adoption pending"
+      "license_status": "MIT",
+      "license": "MIT"
     },
     {
       "path": "skills/research-ppt-style/assets/layout-04.png",
       "sha256": "30cbd2fae269527b32013c604e0dc00c0979b2904f730610c09543f9ce2c8699",
       "bytes": 99853,
       "origin": "retained RC7 generic template or its render",
-      "license_status": "proposed MIT; adoption pending"
+      "license_status": "MIT",
+      "license": "MIT"
     },
     {
       "path": "skills/research-ppt-style/assets/layout-05.png",
       "sha256": "b9ff85ba96973548ef5bd82e76d7e0a1f7d246b5ab8be37dc1aa746c67133786",
       "bytes": 73726,
       "origin": "retained RC7 generic template or its render",
-      "license_status": "proposed MIT; adoption pending"
+      "license_status": "MIT",
+      "license": "MIT"
     },
     {
       "path": "skills/research-ppt-style/assets/layout-06.png",
       "sha256": "e0be1870a85e3ff20f3293b9e219f760a655092108ab84fff6d07e43c2076aa2",
       "bytes": 62503,
       "origin": "retained RC7 generic template or its render",
-      "license_status": "proposed MIT; adoption pending"
+      "license_status": "MIT",
+      "license": "MIT"
     },
     {
       "path": "skills/research-ppt-style/assets/layout-authors.png",
       "sha256": "6747669e5432c983840d350b50aea8372cf5a151308c97bebe381067d764ffc1",
       "bytes": 74941,
       "origin": "retained RC7 generic template or its render",
-      "license_status": "proposed MIT; adoption pending"
+      "license_status": "MIT",
+      "license": "MIT"
     },
     {
       "path": "skills/research-ppt-style/assets/layout-cover.png",
       "sha256": "6a766bf48ed3954a568616471d502b260d9326133fce5d48c5fa707e489e5d4d",
       "bytes": 57303,
       "origin": "retained RC7 generic template or its render",
-      "license_status": "proposed MIT; adoption pending"
+      "license_status": "MIT",
+      "license": "MIT"
     },
     {
       "path": "skills/research-ppt-style/assets/layout-outline.png",
       "sha256": "49685c347215eb91d6127c237f198b6d269ce63a2bdbb02968f54b3492a9fd15",
       "bytes": 57085,
       "origin": "retained RC7 generic template or its render",
-      "license_status": "proposed MIT; adoption pending"
+      "license_status": "MIT",
+      "license": "MIT"
     },
     {
       "path": "skills/research-ppt-style/assets/soc-p04-reference.png",
       "sha256": "11ed5b5e360108ce263ca420f1ebe962d76612c1c1dc99dade4381337ee857a1",
       "bytes": 192710,
       "origin": "anonymized complete SOC reference or freshly rendered preview",
-      "license_status": "reference includes third-party academic material; no blanket MIT relicensing"
+      "license_status": "MIT for original portions; third-party academic material excluded",
+      "license": "MIT AND LicenseRef-ThirdParty-Academic",
+      "third_party_notice": "THIRD_PARTY.md"
     },
     {
       "path": "skills/research-ppt-style/assets/soc-p09-reference.png",
       "sha256": "69ac4e0e22e24abbbd5a95cafc9376c03d6536abeaba8e6c3052aca846cd2568",
       "bytes": 145103,
       "origin": "anonymized complete SOC reference or freshly rendered preview",
-      "license_status": "reference includes third-party academic material; no blanket MIT relicensing"
+      "license_status": "MIT for original portions; third-party academic material excluded",
+      "license": "MIT AND LicenseRef-ThirdParty-Academic",
+      "third_party_notice": "THIRD_PARTY.md"
     },
     {
       "path": "skills/research-ppt-style/assets/soc-p11-reference.png",
       "sha256": "2a2d7a07677c695c78eee565e586f9067a6698907ab10c5c3d556318de94c21f",
       "bytes": 136197,
       "origin": "anonymized complete SOC reference or freshly rendered preview",
-      "license_status": "reference includes third-party academic material; no blanket MIT relicensing"
+      "license_status": "MIT for original portions; third-party academic material excluded",
+      "license": "MIT AND LicenseRef-ThirdParty-Academic",
+      "third_party_notice": "THIRD_PARTY.md"
     },
     {
       "path": "skills/research-ppt-style/assets/soc-p12-reference.png",
       "sha256": "a6aa83c04ead6dd0673a34ad254296a5db56a7e160445d18521c8c3990681669",
       "bytes": 190268,
       "origin": "anonymized complete SOC reference or freshly rendered preview",
-      "license_status": "reference includes third-party academic material; no blanket MIT relicensing"
+      "license_status": "MIT for original portions; third-party academic material excluded",
+      "license": "MIT AND LicenseRef-ThirdParty-Academic",
+      "third_party_notice": "THIRD_PARTY.md"
     },
     {
       "path": "skills/research-ppt-style/assets/soc-reference.pptx",
       "sha256": "6cfa33c8c839c1958b2f28d0d10b26353040941b4a834f1bca45a94378d34b8b",
       "bytes": 2382183,
       "origin": "anonymized complete SOC reference or freshly rendered preview",
-      "license_status": "reference includes third-party academic material; no blanket MIT relicensing"
+      "license_status": "MIT for original portions; third-party academic material excluded",
+      "license": "MIT AND LicenseRef-ThirdParty-Academic",
+      "third_party_notice": "THIRD_PARTY.md"
     }
-  ]
+  ],
+  "license": "MIT",
+  "license_scope_file": "docs/licensing.md",
+  "third_party_notice": "THIRD_PARTY.md"
 }

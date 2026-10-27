@@ -1,6 +1,6 @@
 # 研究PPT技能：完整匿名参考版
 
-版本0.1.0-rc8-sanitized（2026-10-27）。两项技能包含最新正文/口播偏好、指图讲述、手改保护与公式检查规则。新增16页SOC完整匿名参考及其逐页原备注，保留研究图表和学术来源；汇报者姓名、单位/学院、报告日期与编辑元数据已清理。原RC7的16页空白模板与通用口播另存保留。
+版本0.1.0（2026-10-27）。两项技能包含最新正文/口播偏好、指图讲述、手改保护与公式检查规则。新增16页SOC完整匿名参考及其逐页原备注，保留研究图表和学术来源；汇报者姓名、单位/学院、报告日期与编辑元数据已清理。原RC7的16页空白模板与通用口播另存保留。
 
 ## 安装与使用
 
@@ -39,6 +39,12 @@ skills/artifact-template-soc-ppt
 
 只以本仓库目录发布，不上传父目录中的私人原件、审查资料或构建缓存。公开版含经身份清理的参考副本及原备注，不含用户本机原件、个人身份、私人路径、原论文PDF或字体。论文作者与机构名称是学术归属，不是汇报者的身份信息。
 
-[LICENSE.md](LICENSE.md)仍为许可候选说明，未擅自设为生效MIT许可；匿名参考所含论文图表与网页截图另见[THIRD_PARTY.md](THIRD_PARTY.md)，不纳入候选MIT授权范围。隐私处理见[docs/privacy.md](docs/privacy.md)，验证边界见[docs/validation.md](docs/validation.md)。
+## 许可证
+
+本项目的原创技能规则、文档、脚本、讲述和版式采用 **[MIT许可证](LICENSE)**，署名为01Elaine and contributors。许可范围见[docs/licensing.md](docs/licensing.md)。
+
+完整参考中的第三方论文图表、dblp/NCSA网页截图及其在预览中的对应内容，**不受MIT许可覆盖**，仍归相应权利人，详见[THIRD_PARTY.md](THIRD_PARTY.md)。原创文字和版式采用MIT，不等于整份混合内容PPT获得MIT再许可。两项skill各自附LICENSE和NOTICE.md，独立安装时同样保留边界。
+
+隐私处理见[docs/privacy.md](docs/privacy.md)，验证边界见[docs/validation.md](docs/validation.md)。
 
 Python 3.10+可运行 `python tools/check_package.py .` 做文件结构、资源路径、PPT关系及资产哈希检查。该检查不代替研究事实、视觉、素材授权或接收者环境验收。
